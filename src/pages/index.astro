@@ -278,8 +278,8 @@ import "../styles/global.css";
           loop
           playsinline
           preload="metadata"
-          poster="https://res.cloudinary.com/dad4b97rw/image/upload/f_auto,q_auto,w_480/v1774690340/PXL_20260323_002216611_5_iw6vz8.png"
-          src="https://res.cloudinary.com/dad4b97rw/video/upload/f_auto,q_auto:low,w_480/v1774690340/PXL_20260323_002216611_5_iw6vz8.mp4"
+          poster="https://res.cloudinary.com/dad4b97rw/video/upload/f_auto,q_auto,w_480/PXL_20260323_002216611_5_iw6vz8.jpg"
+          src="https://res.cloudinary.com/dad4b97rw/video/upload/f_auto,q_auto:low,w_320/v1774690340/PXL_20260323_002216611_5_iw6vz8.mp4"
         ></video>
       </div>
       <div class="cycling-overlay"></div>
@@ -1025,6 +1025,15 @@ import "../styles/global.css";
                 iframe.title = "Bandung Map";
                 iframe.src = src;
                 iframe.loading = "lazy";
+                // Match the style from global.css
+                iframe.style.width = "150%";
+                iframe.style.height = "150%";
+                iframe.style.marginLeft = "-25%";
+                iframe.style.marginTop = "-25%";
+                iframe.style.filter = "grayscale(15%) sepia(20%) hue-rotate(60deg) saturate(1.8) contrast(0.75) brightness(1.15)";
+                iframe.style.opacity = "0.8";
+                iframe.style.border = "none";
+                iframe.style.pointerEvents = "none";
                 mapContainer.appendChild(iframe);
                 observer.unobserve(mapContainer);
               }
