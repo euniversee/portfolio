@@ -18,8 +18,10 @@ import "../styles/global.css";
     <div class="hero-avatar-row">
       <div class="hero-avatar">
         <img
-          src="https://res.cloudinary.com/dad4b97rw/image/upload/v1774691961/1774691497942_jowtnl.jpg"
+          src="https://res.cloudinary.com/dad4b97rw/image/upload/f_auto,q_auto,w_144/v1774691961/1774691497942_jowtnl.jpg"
           alt="Sigit"
+          width="72"
+          height="72"
         />
       </div>
     </div>
@@ -81,6 +83,19 @@ import "../styles/global.css";
           ></path></svg
         >
         sigitdwi
+      </a>
+      <a
+        class="social-link"
+        href="https://www.strava.com/athletes/138853513"
+        target="_blank"
+        rel="noopener"
+      >
+        <svg viewBox="0 0 24 24" fill="currentColor"
+          ><path
+            d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169"
+          ></path></svg
+        >
+        Sigit Dwi
       </a>
       <span class="badge-avail"
         ><span class="dot"></span>Available for Work</span
@@ -150,6 +165,9 @@ import "../styles/global.css";
             <img
               src="https://t2.genius.com/unsafe/387x387/https%3A%2F%2Fimages.genius.com%2Fa2a3e14697c360bbcdab89c90a76cfac.1000x1000x1.png"
               alt="A Sorrowful Reunion"
+              loading="lazy"
+              width="180"
+              height="180"
             />
           </div>
           <div class="listen-info">
@@ -234,10 +252,12 @@ import "../styles/global.css";
     <!-- MAP / LOCATION (OpenStreetMap Bandung) -->
     <div class="card map-card">
       <div class="map-bg">
-        <iframe
-          title="Bandung Map"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=107.55,-6.97,107.69,-6.86&layer=mapnik"
-          loading="lazy"></iframe>
+        <div
+          id="mapContainer"
+          data-map-src="https://www.openstreetmap.org/export/embed.html?bbox=107.55,-6.97,107.69,-6.86&layer=mapnik"
+          style="width:100%;height:100%;"
+        >
+        </div>
       </div>
       <div class="map-overlay-gradient"></div>
       <div class="map-pin">
@@ -258,7 +278,8 @@ import "../styles/global.css";
           loop
           playsinline
           preload="metadata"
-          src="https://res.cloudinary.com/dad4b97rw/video/upload/q_auto:low,w_480/v1774690340/PXL_20260323_002216611_5_iw6vz8.mp4"
+          poster="https://res.cloudinary.com/dad4b97rw/image/upload/f_auto,q_auto,w_480/v1774690340/PXL_20260323_002216611_5_iw6vz8.png"
+          src="https://res.cloudinary.com/dad4b97rw/video/upload/f_auto,q_auto:low,w_480/v1774690340/PXL_20260323_002216611_5_iw6vz8.mp4"
         ></video>
       </div>
       <div class="cycling-overlay"></div>
@@ -339,8 +360,11 @@ import "../styles/global.css";
           rel="noopener"
         >
           <img
-            src="https://res.cloudinary.com/dad4b97rw/image/upload/v1774683962/M8SstG8caqA-HD_r5gve9.jpg"
+            src="https://res.cloudinary.com/dad4b97rw/image/upload/f_auto,q_auto,w_800/v1774683962/M8SstG8caqA-HD_r5gve9.jpg"
             alt="ICE 2025"
+            loading="lazy"
+            width="400"
+            height="225"
           />
           <div class="video-thumb-overlay"></div>
           <div class="overlay-play">
@@ -381,8 +405,11 @@ import "../styles/global.css";
         >
           <div class="vid-mini-thumb">
             <img
-              src="https://res.cloudinary.com/dad4b97rw/image/upload/v1774686782/videoframe_5748_lp5cdi.png"
+              src="https://res.cloudinary.com/dad4b97rw/image/upload/f_auto,q_auto,w_120/v1774686782/videoframe_5748_lp5cdi.png"
               alt="Bumper KKN"
+              loading="lazy"
+              width="56"
+              height="38"
             />
             <span class="vid-mini-play"
               ><svg viewBox="0 0 10 12"
@@ -452,12 +479,15 @@ import "../styles/global.css";
         </div>
         <div
           class="design-img"
-          data-lightbox-src="https://res.cloudinary.com/dad4b97rw/image/upload/c_auto,h_900,w_1600/screenshot-1774687492892_zxn7lc.png"
+          data-lightbox-src="https://res.cloudinary.com/dad4b97rw/image/upload/f_auto,q_auto/screenshot-1774687492892_zxn7lc.png"
           id="designFeaturedImg"
         >
           <img
-            src="https://res.cloudinary.com/dad4b97rw/image/upload/c_auto,h_900,w_1600/screenshot-1774687492892_zxn7lc.png"
+            src="https://res.cloudinary.com/dad4b97rw/image/upload/f_auto,q_auto,w_800/screenshot-1774687492892_zxn7lc.png"
             alt="Kawula Store UI"
+            loading="lazy"
+            width="400"
+            height="225"
           />
         </div>
         <div class="vid-title">UI Design — Kawula Store</div>
@@ -488,52 +518,67 @@ import "../styles/global.css";
         <div class="sg-grid">
           <div
             class="sg-img"
-            data-lightbox-src="https://res.cloudinary.com/dad4b97rw/image/upload/v1774686648/1_biyys3.png"
+            data-lightbox-src="https://res.cloudinary.com/dad4b97rw/image/upload/f_auto,q_auto/v1774686648/1_biyys3.png"
             id="gallery1"
           >
             <img
-              src="https://res.cloudinary.com/dad4b97rw/image/upload/v1774686648/1_biyys3.png"
+              src="https://res.cloudinary.com/dad4b97rw/image/upload/f_auto,q_auto,w_400/v1774686648/1_biyys3.png"
               alt="Design 1"
+              loading="lazy"
+              width="180"
+              height="180"
             />
           </div>
           <div
             class="sg-img"
-            data-lightbox-src="https://res.cloudinary.com/dad4b97rw/image/upload/v1774686676/Copy_of_Sistem_Pengusir_Burung_Emprit_Lonchura_leucogastroides_Otomatis_Berbasis_Gelombang_Ultrasonik_Poster_A3_Portrait_1_aq8o7g.png"
+            data-lightbox-src="https://res.cloudinary.com/dad4b97rw/image/upload/f_auto,q_auto/v1774686676/Copy_of_Sistem_Pengusir_Burung_Emprit_Lonchura_leucogastroides_Otomatis_Berbasis_Gelombang_Ultrasonik_Poster_A3_Portrait_1_aq8o7g.png"
             id="gallery2"
           >
             <img
-              src="https://res.cloudinary.com/dad4b97rw/image/upload/v1774686676/Copy_of_Sistem_Pengusir_Burung_Emprit_Lonchura_leucogastroides_Otomatis_Berbasis_Gelombang_Ultrasonik_Poster_A3_Portrait_1_aq8o7g.png"
+              src="https://res.cloudinary.com/dad4b97rw/image/upload/f_auto,q_auto,w_400/v1774686676/Copy_of_Sistem_Pengusir_Burung_Emprit_Lonchura_leucogastroides_Otomatis_Berbasis_Gelombang_Ultrasonik_Poster_A3_Portrait_1_aq8o7g.png"
               alt="Design 2"
+              loading="lazy"
+              width="180"
+              height="180"
             />
           </div>
           <div
             class="sg-img"
-            data-lightbox-src="https://res.cloudinary.com/dad4b97rw/image/upload/v1774686680/Stop_Bullying_1080_x_1350_px_ddzkpd.png"
+            data-lightbox-src="https://res.cloudinary.com/dad4b97rw/image/upload/f_auto,q_auto/v1774686680/Stop_Bullying_1080_x_1350_px_ddzkpd.png"
             id="gallery3"
           >
             <img
-              src="https://res.cloudinary.com/dad4b97rw/image/upload/v1774686680/Stop_Bullying_1080_x_1350_px_ddzkpd.png"
+              src="https://res.cloudinary.com/dad4b97rw/image/upload/f_auto,q_auto,w_400/v1774686680/Stop_Bullying_1080_x_1350_px_ddzkpd.png"
               alt="Design 3"
+              loading="lazy"
+              width="180"
+              height="180"
             />
           </div>
           <div
             class="sg-img"
-            data-lightbox-src="https://res.cloudinary.com/dad4b97rw/image/upload/v1774686682/A_b_lhgith.png"
+            data-lightbox-src="https://res.cloudinary.com/dad4b97rw/image/upload/f_auto,q_auto/v1774686682/A_b_lhgith.png"
             id="gallery4"
           >
             <img
-              src="https://res.cloudinary.com/dad4b97rw/image/upload/v1774686682/A_b_lhgith.png"
+              src="https://res.cloudinary.com/dad4b97rw/image/upload/f_auto,q_auto,w_400/v1774686682/A_b_lhgith.png"
               alt="Design 4"
+              loading="lazy"
+              width="180"
+              height="180"
             />
           </div>
           <div
             class="sg-img wide"
-            data-lightbox-src="https://res.cloudinary.com/dad4b97rw/image/upload/v1774686682/Terima_Kasih_jipx24.png"
+            data-lightbox-src="https://res.cloudinary.com/dad4b97rw/image/upload/f_auto,q_auto/v1774686682/Terima_Kasih_jipx24.png"
             id="gallery5"
           >
             <img
-              src="https://res.cloudinary.com/dad4b97rw/image/upload/v1774686682/Terima_Kasih_jipx24.png"
+              src="https://res.cloudinary.com/dad4b97rw/image/upload/f_auto,q_auto,w_800/v1774686682/Terima_Kasih_jipx24.png"
               alt="Design 5"
+              loading="lazy"
+              width="380"
+              height="180"
             />
           </div>
         </div>
@@ -966,5 +1011,29 @@ import "../styles/global.css";
         closeVideo();
       }
     });
+
+    // ── MAP LAZY LOADING (Optimization) ──
+    const mapContainer = document.getElementById("mapContainer");
+    if (mapContainer) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const src = mapContainer.getAttribute("data-map-src");
+              if (src) {
+                const iframe = document.createElement("iframe");
+                iframe.title = "Bandung Map";
+                iframe.src = src;
+                iframe.loading = "lazy";
+                mapContainer.appendChild(iframe);
+                observer.unobserve(mapContainer);
+              }
+            }
+          });
+        },
+        { rootMargin: "200px" },
+      );
+      observer.observe(mapContainer);
+    }
   </script>
 </Layout>
